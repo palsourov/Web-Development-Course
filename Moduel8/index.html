@@ -12,11 +12,20 @@
      align-items: center;
      height: 90vh;
      border: 1px solid black;
-     flex-direction:
    }
    .inputSection{
     border: 1px dotted gray;
-    height: 300px;
+    width: 40%;
+    height: 60%;
+    text-align: center;
+    border-radius: 10px;
+    
+   }
+   .inputSection input{
+    margin-top: 20px;
+    width: 50%;
+    height: 40px;
+    border-radius: 10px;
    }
   
 
@@ -25,12 +34,19 @@
       
     <form action="" class=" Container">
             <div class="inputSection">
-                <h1>Login</h1>
-                <input type="Email" placeholder="Email" >
-                <input type="password" placeholder=" password">
-                <button>Submit</button>      
+                
+                <div class="logo">
+                    <h1>Login</h1>
+                </div>
+                <div class="email">                
+                    <input type="Email" placeholder="Email" required >
+                </div>
+                <div class="password">                
+                    <input type="password" placeholder=" password" required>
+                </div>
+                 <input type="button" value="submit">    
             
-        </div>
+            </div>
          
 
        
