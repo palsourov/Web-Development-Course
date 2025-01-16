@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns:40% auto ;
+            border: 2px solid red;
+            height: 45vh;
+            padding: 30px;
+            gap: 20px; 
+            border-radius: 10px;  
+            margin: 10% 10%;
+            
+        }
+        .card{
+            border: 2px solid gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            border-radius: 10px;
+        }
+        .card1{
+            background-color: gray;
+        }
+        .card2{
+            background-color:#fcffcc;
+        }
+        @media screen and (max-width: 576px){
+            .container{
+                grid-template-columns:repeat(1 ,1fr);       
+ 
+            }
+            .card1{
+                width: 80%; 
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- task 1 -->
+    <div class="container">
+        <div class="card card1">
+            <p>Right</p>
+        </div>
+        <div class="card card2">
+            <p>Left</p>
+        </div>
+        
+    </div>
+</body>
+</html>
