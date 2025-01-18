@@ -1,31 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Example</title>
-    <link rel="stylesheet" href="Style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
     <header>
-        <h1>MY picture </h1>
-       
+      <h1>MY picture</h1>
     </header>
+    <style>
+      .row {
+        height: 300px;
+        display: flex;
+        gap: 5px;
+        margin-bottom: 10px;
+    
+      }
+      .row > div{
+        flex: 1;
+      }
+      .row img {
+        width: 100%;
+        height: 100%;
+      }
+      .Vartical img {
+        height: 50%;
+      }
+    .imgG{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 5px;
+    }
+    
+    @media screen  and (max-width: 576px) {
+      .row {
+          flex-direction: column;
+          height: auto;
+      } 
+      .row {
+        margin: 10px;
+      }
+      .imgG{
+        grid-template-columns: repeat(1,1fr);
+      } 
+    }
+    </style>
     <main>
-        <section>
-            <div class="row">
-                <img src="./Image/A.jpg" alt="">
-            </div>
-            <div class="row">
-                <img src="./Image/B.jpg" alt="">
-                <img src="./Image/C.jpg" alt="">
-                <div class="Vartical">
-                    <img src="./Image/D.jpg" alt="">
-                    <img src="./Image/E.jpg" alt="">
+      <section>
+        <div class="row">
+          <img src="./Image/A.jpg" alt="" />
+        </div>
+        <div class="row">
+          <div>
+            <img src="./Image/B.jpg" alt="" />
+          </div>
+           <div> 
+            <img src="./Image/C.jpg" alt="" />
+           </div>
+          <div class="Vartical">
+            <img src="./Image/D.jpg" alt="" />
+            <img src="./Image/E.jpg" alt="" />
+          </div>
+            
+        </div>
+        <div class="row">
+            <div><img src="./Image/F.jpg" alt=""></div>
+            <div class="imgG">
+                <div>
+                    <img src="./Image/G.jpg" alt="">
                 </div>
-                
+                <div>
+                    <img src="./Image/G.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./Image/G.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./Image/G.jpg" alt="">
+                </div>
+            
             </div>
-        </section>
+            <div>
+                <img src="./Image/H.jpg" alt="">
+            </div>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
