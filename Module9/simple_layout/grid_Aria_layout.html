@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GridLayout</title>
+    <style>
+    
+        .header , .nav ,.main , .Sidevar,.advistment,.footer{
+            background-color: burlywood;
+            border: 3px solid rgb(255, 145, 0);
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+       .header{
+            grid-area: header;
+        }
+        .nav{
+            grid-area: nav;
+        }
+        .main{
+            grid-area: main;
+        }
+        .footer{
+            grid-area: footer;
+        }
+        .Sidevar{
+            grid-area: Slidvar;
+        }
+        .advistment{
+            grid-area: advistment;
+        }
+
+    .container{
+        display: grid;
+        grid-template-areas: "header header header header "
+                             "nav      main  main  Sidevar"
+                              "nav     main  main  advistment"
+                              "footer footer footer footer"
+        ;
+        gap: 10px;
+    }
+    
+
+    @media screen  and (max-width:576px){
+        .container{
+           
+            grid-template-areas: "header "
+                                  "nav "
+                                  "main"
+                                  "Sidevar" 
+                                  "advistment"
+                                  "footer"
+            ;
+            gap: 10px;
+        }
+    }
+    @media screen  and (min-width:576px) and (max-width:992px){
+        .container{
+           
+            grid-template-areas: "header  header header header"
+                                  "nav  nav nav  nav"
+                                  "Sidevar main main main" 
+                                  "advistment footer footer footer"
+                                 
+            ;
+            gap: 10px;
+        }
+    }
+        
+    </style>
+</head>
+<body class="container">
+   <header class="header">
+    <h3>The header</h3>
+   </header>
+   <nav class="nav">
+    <ul>
+        <li>nav_1</li>
+        <li>nav_2</li>
+        <li>nav_3</li>
+    </ul>
+   </nav>
+    <main class="main">
+    <article>
+        <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, error!</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis vel voluptatibus nisi, illum itaque natus doloremque esse porro quo, consectetur nostrum ea officia dignissimos eaque, aliquam ullam delectus. Molestiae, temporibus.</p>
+    </article>
+    
+</main>
+
+    <aside class="aside">
+        <div class="Sidevar"> <h3>Slidbar</h3></div>
+        <div class="advistment"><h3>Advistment</h3></div>
+    </aside>
+    <footer  class="footer">
+        <h3>The footer</h3>
+    </footer>
+</body>
+</html>
