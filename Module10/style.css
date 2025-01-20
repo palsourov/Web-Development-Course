@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Work Sans", serif;
+}
+.displayFlax{
+    display: flex;
+    gap: 2rem;
+}
+p{
+    color: #727272;
+}
+li , a{
+    list-style: none;
+    text-decoration: none;
+}
+.btn-primary{
+    background-color: #FF900E;
+    color: white;
+    padding: 20px 21px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;    
+}
+/* header section */
+.header{
+    padding-bottom: 30px;
+}
+.logo h1{
+    font-size: 45px;
+    font-weight: 700;
+}
+.NavBar a{
+    color: #424242;
+    font-size: 18px;
+}
+.bg-light{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+.NaviGation,.banner{
+    justify-content: space-between;
+    margin:0px auto;
+    align-items: center;
+    max-width: 1440px;
+    
+}
+
+.sectionTitle{
+     max-width: 800px;
+     margin: 0 auto;
+     text-align: center;
+     margin-bottom: 50px;
+}
+.banner_title{
+    font-size: 64px;
+    font-weight: 700;
+}
