@@ -4,13 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>tailwinCSs</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+      .roboto {
+        font-family: "Roboto";
+      }
+      .BebasNeue {
+        font-family: "Bebas Neue";
+      }
+    </style>
   </head>
-  <body>
+  <body class="roboto">
     <header class="bg-[#FFFBF0]">
-   <!-- navigation bar -->
+      <!-- navigation bar -->
       <div class="Navbar">
-        
         <nav
           class="flex justify-between items-center pt-5 ml-[135px] mr-[135px]"
         >
@@ -32,7 +49,7 @@
 
       <div class="flex items-center justify-between ml-[135px] mr-[135px] mt-4">
         <div class="banneritle">
-          <h1 class="text-7xl">
+          <h1 class="text-7xl BebasNeue">
             <span class="text-[#FABE4C]">Be the Penguins </span> <br />
             <span class="text-[#363958]">of Winter</span>
           </h1>
@@ -43,9 +60,137 @@
           <button></button>
         </div>
         <div class="bannerImg">
-          <img class="max-w-7xl" src="./images/model.png" alt="" />
+          <img class="w-xl" src="./images/model.png" alt="" />
         </div>
       </div>
     </header>
+    <main>
+      <!-- Woman jacket -->
+      <section class="ml-[135px] mr-[135px] mt-40">
+        <div class="productTitle">
+          <h1 class="text-[45px] text-[#363958] BebasNeue ml-8">
+            Woman Jacket
+          </h1>
+        </div>
+
+        <div class="flex justify-around mt-10">
+          <div
+            class="w-80  rounded-lg p-[20px] shadow-[3px_1px_24px_rgba(0,0,0,0.25)]"
+          >
+            <img src="./images/jacket-1.png" alt="" />
+            <div>
+              <h3 class="text-2xl text-[#363958] font-bold mt-5">
+                Yellow Coat Jacket
+              </h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <div class="flex justify-between mt-2">
+                <p class="text-[#FABE4C] text-[36px] font-bold">$234</p>
+                <p class="p-[15px] font-bold rounded-lg text-[16px] bg-[#A4BC46] text-[#FFFFFF]"><i class='bx bx-cart'class="text-[20px]"></i><a href="">BUY NOW</a></p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-80  rounded-lg p-[20px] shadow-[3px_1px_24px_rgba(0,0,0,0.25)]"
+          >
+            <img src="./images/jacket-2.png " alt="" class="w-100 p-[20px]" />
+            <div>
+              <h3 class="text-2xl text-[#363958] font-bold mt-5">
+                Ladies Jacket
+              </h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <div class="flex justify-between mt-2">
+                <p class="text-[#FABE4C] text-[36px] font-bold">$234</p>
+                <p class="p-[15px] font-bold rounded-lg text-[16px] bg-[#A4BC46] text-[#FFFFFF]"><i class='bx bx-cart'class="text-[20px]"></i><a href="">BUY NOW</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-80  rounded-lg p-[20px] shadow-[3px_1px_24px_rgba(0,0,0,0.25)]"
+          >
+            <img src="./images/jacket-3.png" alt="" class="w-100 p-[20px]" />
+            <div>
+              <h3 class="text-2xl text-[#363958] font-bold mt-5">
+                Woman Leather Jacket
+              </h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <div class="flex justify-between mt-2">
+                <p class="text-[#FABE4C] text-[36px] font-bold">$234</p>
+                <p class="p-[15px] font-bold rounded-lg text-[16px] bg-[#A4BC46] text-[#FFFFFF]"><i class='bx bx-cart'class="text-[20px]"></i><a href="">BUY NOW</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ml-[135px] mr-[135px] mt-40">
+        <div class="product1">
+          <h1 class="text-[45px] text-[#363958] BebasNeue ml-8 upercase">
+            Man Jacket
+          </h1>
+
+          <div class="Manjacket flex justify-around mt-10">
+            <div
+              class="w-80  rounded-lg p-[20px] shadow-[3px_1px_24px_rgba(0,0,0,0.25)]"
+            >
+              <img src="./images/jacket-4.png" alt="" class="w-100" />
+              <h3 class="text-2xl text-[#363958] font-bold mt-5">
+                Snowboard Jacket Mens
+              </h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <div class="flex justify-between mt-2">
+                <p class="text-[#FABE4C] text-[36px] font-bold">$234</p>
+                <p class="p-[15px] font-bold rounded-lg text-[16px] bg-[#A4BC46] text-[#FFFFFF]"><i class='bx bx-cart'class="text-[20px]"></i><a href="">BUY NOW</a></p>
+              </div>
+            </div>
+            <div
+              class="w-80  rounded-lg p-[20px] shadow-[3px_1px_24px_rgba(0,0,0,0.25)]"
+            >
+              <img src="./images/jacket-5.png" alt="" class="w-100" />
+              <h3 class="text-2xl text-[#363958] font-bold mt-5">
+                Man Leather Jackets
+              </h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <div class="flex justify-between mt-2">
+                <p class="text-[#FABE4C] text-[36px] font-bold">$234</p>
+                <p class="p-[15px] font-bold rounded-lg text-[16px] bg-[#A4BC46] text-[#FFFFFF]"><i class='bx bx-cart'class="text-[20px]"></i><a href="">BUY NOW</a></p>
+              </div>
+            </div>
+            <div
+              class="w-80  rounded-lg p-[20px] shadow-[3px_1px_24px_rgba(0,0,0,0.25)]"
+            >
+              <img src="./images/jacket-6.png" alt="" class="w-100" />
+              <h3 class="text-2xl text-[#363958] font-bold mt-5">
+                Man Casual Jackets
+              </h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <div class="flex justify-between mt-2">
+                <p class="text-[#FABE4C] text-[36px] font-bold">$234</p>
+                <p class="p-[15px] font-bold rounded-lg text-[16px] bg-[#A4BC46] text-[#FFFFFF]"><i class='bx bx-cart'class="text-[20px]"></i><a href="">BUY NOW</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
   </body>
 </html>
