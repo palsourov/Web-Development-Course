@@ -1,0 +1,23 @@
+header h1{
+    text-align: center;
+}
+.comment{
+    border: 2px solid blue;
+    background: skyblue;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 10px;
+}
+#inputText{
+    width: 80%;
+    margin: 20px;
+    padding: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+#btn{
+    padding: 10px;
+    font-size: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
