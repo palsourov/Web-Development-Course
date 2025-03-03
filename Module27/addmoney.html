@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>main page</title>
+    <title>Add money page</title>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -46,14 +46,14 @@
       </section>
       <!-- card sectio -->
       <section class="mx-6 mt-7">
-        <div class="grid grid-cols-3 gap-4">
+        <div class="grid grid-cols-3 gap-2">
           <!-- card1 -->
           <div class="border p-5 rounded-xl bg-[#ffff]">
-            <div class="flex justify-center">
-              <img src="./image/wallet 1.png" alt="" />
+            <div class="flex justify-center ">
+              <img  src="./image/wallet 1.png" alt="" />
             </div>
             <div class="text-center mt-2">
-              <h1>Add Money</h1>
+              <h1 >Add Money</h1>
             </div>
           </div>
           <!-- card2-->
@@ -62,7 +62,7 @@
               <img src="./image/send 1.png" alt="" />
             </div>
             <div class="text-center mt-2">
-              <h1>Cash Out</h1>
+              <h1 >Cash Out</h1>
             </div>
           </div>
           <!-- card3 -->
@@ -71,7 +71,7 @@
               <img src="./image/money 1.png" alt="" />
             </div>
             <div class="px-1 mt-3">
-              <h1>Transfer Money</h1>
+              <h1 >Transfer Money</h1>
             </div>
           </div>
           <!-- card4 -->
@@ -80,7 +80,7 @@
               <img src="./image/financial 1.png" alt="" />
             </div>
             <div class="text-center mt-2">
-              <h1>Get Bonus</h1>
+              <h1 >Get Bonus</h1>
             </div>
           </div>
           <!-- card5 -->
@@ -98,13 +98,44 @@
               <img src="./image/transaction 1.png" alt="" />
             </div>
             <div class="text-center mt-2">
-              <h1>Transaction</h1>
+              <h1 >Transaction</h1>
             </div>
           </div>
         </div>
       </section>
-      <section></section>
-   
+      <!-- input section -->
+      <section class="mt-10">
+        <h1 class="ml-10 font-bold text-2xl">Add Money</h1>
+           <div class="bg-[#ffff] mx-6 p-5 mt-5 rounded-xl">
+            <div class=""> 
+            <fieldset class="fieldset ">
+                <legend class="fieldset-legend ml-2 text-xl font-bold ">Select bank</legend>
+                <select class="select h-[70px] bg-gray-100  w-full mt-4 text-xl text-gray-400 " placeholder="Select A bank">
+                  <option disabled selected>Sonali Bank</option>
+                  <option>Pubali Bank</option>
+                  <option>BanglaDesh Bank</option>
+                  <option>Janata Bank</option>
+                </select>
+              </fieldset>
+              </div>
+
+              <div class="mt-5">
+                   <p class="ml-2 text-xl font-bold "> Account Number</p>
+                   <input class="w-full p-5 bg-gray-100 rounded-xl text-xl mt-2" type="number" name="" id="" placeholder="Enter your 11 digit Account number">
+              </div>
+              <div class="mt-5">
+                <p class="ml-2 text-xl font-bold "> Add Amount</p>
+                <input class="w-full p-5 bg-gray-100 rounded-xl text-xl mt-2" type="number" name="" id="" placeholder="Enter your Amount">
+           </div>
+              <div class="mt-5">
+                <p class="ml-2 text-xl font-bold ">Pin Number</p>
+                <input class="w-full p-5 bg-gray-100 rounded-xl text-xl mt-2" type="password" name="" id="" placeholder="Enter 4 digit pin number">
+           </div>
+             <div class=" hover:bg-sky-700  text-center w-[80%] mx-auto  mt-5 bg-[#0874F2] rounded-3xl">
+                 <button class=" font-bold text-[#ffff] text-2xl p-6  ">Add Money</button>
+             </div>
+           </div>
+      </section>
     </main>
  
 

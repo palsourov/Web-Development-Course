@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pay</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <link rel="shortcut icon" href="./image/payoo.png" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
@@ -12,47 +12,71 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-
   </head>
   <body class="bg-slate-800">
     <!-- header section -->
     <header class="max-w-lg min-h-screen mx-auto py-6 bg-gray-200">
-
-      <section >
+      <section>
         <nav class="flex justify-center items-center">
-          <div class="mt-10 relative  flex justify-center items-center w-9/12 mb-10">
-             <img class="w- " src="./image/Rectangle 1.png" alt="" />
-             <img  class="w-16 absolute -mt-[200px] " src="./image/Group.png" alt="" />
+          <div
+            class="mt-10 relative flex justify-center items-center w-9/12 mb-10"
+          >
+            <img class="w-" src="./image/Rectangle 1.png" alt="" />
+            <img
+              class="w-16 absolute -mt-[200px]"
+              src="./image/Group.png"
+              alt=""
+            />
           </div>
         </nav>
       </section>
       <!-- login section -->
       <section>
         <div class="hero -mt-[150px]">
-            <div class="card bg-gray-200 w-full max-w-sm shrink-0 shadow-2xl">
-              <form class="card-body">
-                <div class="form-control">
-                  <label class="label">
-                    <span class="label-text text-black	font-bold text-2xl">Acount number</span>
-                  </label>
-                  <input value="12345678912" id="Account" type="number" placeholder=" Enter Account Number" class="input input-bordered" required />
-                </div>
-                <div class="form-control">
-                  <label class="label">
-                    <span class="label-text text-black	font-bold text-2xl	">4 digit Pin </span>
-                  </label>
-                  <input  id="password" type="password" placeholder="Enter 4 digit Pin" class="input input-bordered" required />
-                  <label class="label">
-                    <a href="#" class="label-text-alt link link-hover">Forgot pin?</a>
-                  </label>
-                </div>
-                <div class="form-control mt-6">
-                  <button id="button" class="btn btn-primary">Login</button>
-                </div>
-              </form>
-            </div> 
+          <div class="card bg-gray-200 w-full max-w-sm shrink-0 shadow-2xl">
+            <form class="card-body">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text text-black font-bold text-2xl"
+                    >Acount number</span
+                  >
+                </label>
+                <input
+                  value="12345678912"
+                  id="Account"
+                  type="number"
+                  placeholder=" Enter Account Number"
+                  class="input input-bordered"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text text-black font-bold text-2xl"
+                    >4 digit Pin
+                  </span>
+                </label>
+                <input
+                  id="password"
+                  type="password"
+                  placeholder="Enter 4 digit Pin"
+                  class="input input-bordered"
+                  required
+                />
+                <label class="label">
+                  <a href="#" class="label-text-alt link link-hover"
+                    >Forgot pin?</a
+                  >
+                </label>
+              </div>
+              <div class="form-control mt-6">
+                <button id="button" class="btn btn-primary">Login</button>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
+      
     </header>
     <script src="./js/script.js"></script>
   </body>
